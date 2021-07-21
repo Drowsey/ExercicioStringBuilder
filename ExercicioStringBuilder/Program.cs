@@ -7,7 +7,15 @@ namespace ExercicioStringBuilder
     {
         static void Main(string[] args)
         {
-            Post post1 = new Post();
+            DateTime moment = DateTime.Now;
+            string title = "Traveling to New Zealand";
+            string content = "I'm going to visit this wonderful country!";
+            int likes = 12;
+            Post post1 = new Post(moment, title, content, likes);
+
+            Console.WriteLine("Título: "+ post1.Title
+                + "\nContent: "+ post1.Content
+                + "\nLikes: "+ post1.Likes);
         }
     }
 }
