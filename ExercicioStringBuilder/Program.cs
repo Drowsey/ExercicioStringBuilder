@@ -31,23 +31,16 @@ namespace ExercicioStringBuilder
 
             p2.AddComment(c3);
             p2.AddComment(c4);
-            /*
-            Console.WriteLine($"{p1.Title}\n" +
-                $"{p1.Likes} Likes - {p1.Moment}\n" +
-                $"{p1.Content}\nComments:\n");
-            foreach(Comment comment in p1.Comments)
-            {
-                Console.Write(comment.Text+"\n----------\n");
-            }
-            */
 
-            WritePost(p1);
+            Console.WriteLine(p1);
+            Console.WriteLine(p2);
+            /*WritePost(p1);
             Console.WriteLine();
-            WritePost(p2);
+            WritePost(p2);*/
 
         }
 
-        static void WritePost(Post post)
+        /*static void WritePost(Post post)
         {
             Console.WriteLine($"{post.Title}\n" +
                     $"{post.Likes} Likes - {post.Moment}\n" +
@@ -56,6 +49,6 @@ namespace ExercicioStringBuilder
             {
                 Console.Write(comment.Text + "\n----------\n");
             }
-        }
+        }*/
     }
 }
