@@ -10,7 +10,7 @@ namespace ExercicioStringBuilder.Entities
         public string Title { get; set; }
         public string Content { get; set; }
         public int Likes { get; set; }
-        List<Comment> comment = new List<Comment>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
 
         public Post()
         {
@@ -22,6 +22,15 @@ namespace ExercicioStringBuilder.Entities
             Title = title;
             Content = content;
             Likes = likes;
+        }
+
+        public void AddComment(Comment comment)
+        {
+            Comments.Add(comment);
+        }
+        public void RemoveComment(Comment comment)
+        {
+            Comments.Remove(comment);
         }
     }
 }
